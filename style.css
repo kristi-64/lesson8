@@ -1,26 +1,132 @@
 * {
-  margin: 0px 20px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
   background-color: rgb(252, 255, 255);
 }
 
 header {
   display: flex;
   background-color: #0a22f4;
-  text-align: right;
-  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
 }
 
 .logo {
   background-color: transparent;
+  height: 40px;
 }
 
 .navigation {
   background-color: transparent;
-  padding-top: 25px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 
 .navigation a {
   text-decoration: none;
   background-color: transparent;
   color: white;
+  font-size: 14px;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.navigation a.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60%;
+  height: 2px;
+  background-color: white;
+}
+
+.button {
+  background-color: white;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.services {
+  padding: 60px 10%;
+}
+
+.services-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.heading {
+  font-size: 28px;
+  color: #111;
+}
+
+.dots {
+  display: flex;
+  gap: 8px;
+  background-color: transparent;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  background-color: #ccd4ff;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot.active-dot {
+  background-color: #0a22f4;
+}
+
+.services-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  background-color: transparent;
+}
+
+.container {
+  flex: 1;
+  background-color: transparent;
+}
+
+.rectangle {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(221, 223, 224);
+  margin-bottom: 25px;
+}
+
+.active-rec {
+  width: 50px;
+  height: 50px;
+  background-color: #0a22f4;
+  margin-bottom: 25px;
+}
+
+.heading2 {
+  font-size: 18px;
+  color: #111111;
+  margin-bottom: 15px;
+  background-color: transparent;
+}
+
+.paragraph {
+  font-size: 14px;
+  color: #666666;
+  line-height: 1.6;
+  background-color: transparent;
 }
